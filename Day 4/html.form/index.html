@@ -1,38 +1,40 @@
 <html>
     <head>
         <title>My first form</title>
-        <link rel="stylesheet" type="text/css" media="scree" href="bulma.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="bulma.min.css">
     </head>
     <body>
-        <form>
-            
-            <div>
-                <label for="">Name</label> 
-                <input />
+        <form class="form">
+
+            <div class="field">
+                <label class="label">Name</label> 
+                <input class="input" type="text" />
             </div>
 
-            <div>
-                <label for="">Surname</label> 
-                <input />
+            <div class="field">
+                <label class="label">Surname</label> 
+                <input class="input" type="text" />
             </div>
 
-            <div>
-                <label for="">Age</label> 
-                <input />
+            <div class="field">
+                <label class="label">Age</label> 
+                <input class="input" type="text" />
             </div>
 
-            <div>
-                <label for="">gender</label> 
-                <input />
+            <div class="field">
+                <label class="label">gender</label> 
+                <input class="input" type="number" />
             </div>
 
-            <div>
-                <label for="">Contact</label> 
-                <input />
+            <div class="field">
+                <label class="label">Contact</label> 
+                <input class="input" type="number" />
             </div>
            
            
-           <button>submit</button>
+           <div>
+               <input class="button is-primary" type="button" value="Submit" onclick="alert('Viiiiish')"/>
+           </div>
         </form>
     </body>
 </html>
