@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20180927T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Develop Scheduling System" note="" work="216000" start="20180927T000000Z" end="20181005T100000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Design Thinking" note="" work="216000" start="20180927T000000Z" end="20181005T100000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="3" name="Identifying the problem(What the client need)" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="4" name="Gathering requirements" note="" work="86400" start="20180927T000000Z" end="20181001T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="5" name="interviewing the client" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="6" name="Brainstorming (Ideate)" note="" work="28800" start="20180927T170000Z" end="20180928T170000Z" work-start="20180928T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="5" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="7" name="Analysis" note="" work="28800" start="20180928T170000Z" end="20181001T170000Z" work-start="20181001T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="6" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="8" name="Prototype" note="" work="86400" start="20181001T170000Z" end="20181004T170000Z" work-start="20181002T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="7" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="9" name="Testing" note="" work="14400" start="20181004T170000Z" end="20181005T100000Z" work-start="20181005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="8" type="FS"/>
+          </predecessors>
+          <task id="10" name="User flow" note="" work="7200" start="20181004T170000Z" end="20181005T100000Z" work-start="20181005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="11" name="Functionalities " note="" work="7200" start="20181004T170000Z" end="20181005T100000Z" work-start="20181005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        </task>
+      </task>
+    </task>
+    <task id="12" name="Project Planning Task" note="" work="230400" start="20180927T000000Z" end="20181002T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="13" name="Research technology stack" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="14" name="Business requirement Specification" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="15" name="Use Case" note="" work="115200" start="20180927T000000Z" end="20181002T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="16" name="Create UML" note="" work="57600" start="20180927T000000Z" end="20180928T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="17" name="Project Infrastructure" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="18" name="Project implementation" note="" work="604800" start="20180927T000000Z" end="20181010T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="19" name="Create DataBase" note="" work="288000" start="20180927T000000Z" end="20181010T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="20" name="Functionalities" note="" work="230400" start="20180927T000000Z" end="20181008T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="21" name="Button Creation" note="" work="144000" start="20180927T000000Z" end="20181003T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="22" name="Links Creation" note="" work="86400" start="20181003T170000Z" end="20181008T170000Z" work-start="20181004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="23" name="Notify the users when the train is delayed" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="24" name="Setup notification framework" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="25" name="Process Ticket Sales" note="" work="57600" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="26" name="Setup billing" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="27" name="Get ticket pricing and store in database" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
+  <allocations/>
+</project>
