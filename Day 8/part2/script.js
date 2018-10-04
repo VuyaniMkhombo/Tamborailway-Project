@@ -87,7 +87,9 @@ function loadButtonEvent(){
         event.preventDefault()
         var start= document.getElementById('start').value
         var destination= document.getElementById('destination').value
-        alert(start + '.' + destination)
+       // alert(start + '.' + destination)
+       getJourney(getToken())
+
     })
 }
 
@@ -109,8 +111,6 @@ function show(formId){
     }
 
 }
-
-function getJourney(token)
 
 function getToken() {
     var token = this.localStorage.getItem('token')
@@ -213,3 +213,32 @@ function addLinesToDropdown(linesList) {
         linesSelect.options.add(new Option(line.name, line.id, false, false))
     })
 }
+ function getJourney(token){
+     var start = document.getElementById('start').value
+     var destination = document.getElementById('destination').value
+
+     start = start.split(',')
+     destination = destination.split(',')
+     var request = new XMLHttpRequest();
+     var payload = {
+        "geometry": {
+            "type": "MultiPoint",
+            "coordinates": [
+                start,
+                destination
+            ]
+        },
+        "maxItineraries": 5
+         
+     }
+
+     request.addEventListener('load', function () {
+        var response = JSON.parse(this.responseText);
+        console.log(response)
+    });
+    request.open('POST', 'https://platform.whereismytransport.com/api/journeys' , true);
+    request.setRequestHeader('Accept', 'application/json');
+    request.setRequestHeader('Content-Type', 'application/json');
+    request.setRequestHeader('Authorization', 'Bearer ' + token);
+    request.send(JSON.stringify(payload));
+ }
