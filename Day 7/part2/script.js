@@ -52,10 +52,13 @@ function show(formId){
     document.getElementById('agencies-form').style .display ='none'
     document.getElementById('lines-form').style .display ='none'
     document.getElementById('logout-form').style .display ='none'
+    document.getElementById('map-form').style.display = 'none'
 
     document.getElementById(formId).style.display = 'block'
     if(formId != 'login-form'){
         document.getElementById('logout-form').style.display = 'block'
+        document.getElementById('map-form').style.display = 'block'
+        
     }
 
 }
