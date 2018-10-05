@@ -20,11 +20,15 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="Develop Scheduling System" note="" work="1036800" start="20180927T000000Z" end="20181017T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="2" name="Design Thinking" note="" work="1036800" start="20180927T000000Z" end="20181017T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="3" name="Identifying the problem(What the client need)" note="" work="576000" start="20180927T000000Z" end="20181016T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="Develop Scheduling System" note="" work="1036800" start="20180927T000000Z" end="20181024T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Design Thinking" note="" work="1036800" start="20180927T000000Z" end="20181024T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="3" name="Identifying the problem(What the client need)" note="" work="576000" start="20180927T000000Z" end="20181024T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <task id="4" name="company interview" note="" work="172800" start="20180927T000000Z" end="20181004T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="5" name="interviewing commuters" note="" work="403200" start="20180927T000000Z" end="20181016T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="5" name="interviewing commuters" note="" work="403200" start="20181004T170000Z" end="20181024T170000Z" work-start="20181005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="4" type="FS"/>
+            </predecessors>
+          </task>
         </task>
         <task id="6" name="Gathering requirements" note="" work="460800" start="20180927T000000Z" end="20181017T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <task id="7" name="interviewing the client" note="" work="288000" start="20180927T000000Z" end="20181010T170000Z" work-start="20180927T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
@@ -42,59 +46,79 @@
         </task>
       </task>
     </task>
-    <task id="11" name="Project Planning Task" note="" work="230400" start="20180927T000000Z" end="20181002T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="12" name="Research technology stack" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="13" name="Business requirement Specification" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="14" name="Use Case" note="" work="115200" start="20180927T000000Z" end="20181002T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="15" name="Create UML" note="" work="57600" start="20180927T000000Z" end="20180928T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="11" name="Project Planning Task" note="" work="230400" start="20180927T000000Z" end="20181008T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Research technology stack" note="" work="86400" start="20180927T000000Z" end="20181001T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="13" name="Business requirement Specification" note="" work="57600" start="20181001T170000Z" end="20181003T170000Z" work-start="20181002T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="14" name="Use Case" note="" work="28800" start="20181003T170000Z" end="20181004T170000Z" work-start="20181004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="13" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="15" name="Process flow" note="" work="57600" start="20181004T170000Z" end="20181008T170000Z" work-start="20181005T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="14" type="FS"/>
+        </predecessors>
+      </task>
     </task>
-    <task id="16" name="Project Infrastructure" note="" work="14400" start="20180927T000000Z" end="20180927T120000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="17" name="Project implementation" note="" work="1166400" start="20180927T000000Z" end="20181010T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="18" name="Create DataBase" note="" work="288000" start="20180927T000000Z" end="20181010T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="19" name="Functionalities" note="" work="777600" start="20180927T000000Z" end="20181008T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="20" name="Button Creation" note="" work="144000" start="20180927T000000Z" end="20181003T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="21" name="Links Creation" note="" work="86400" start="20181003T170000Z" end="20181008T170000Z" work-start="20181004T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="16" name="Project Infrastructure" note="" work="1152000" start="20180927T000000Z" end="20181121T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="17" name="Project implementation" note="" work="1353600" start="20181121T170000Z" end="20181205T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="16" type="FS"/>
+      </predecessors>
+      <task id="18" name="Create DataBase" note="" work="288000" start="20181121T170000Z" end="20181205T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="19" name="Functionalities" note="" work="921600" start="20181121T170000Z" end="20181203T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="20" name="Button Creation" note="" work="144000" start="20181121T170000Z" end="20181128T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="21" name="Links Creation" note="" work="86400" start="20181128T170000Z" end="20181203T170000Z" work-start="20181129T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="20" type="FS"/>
           </predecessors>
         </task>
-        <task id="22" name="System Requirement" note="" work="288000" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <task id="23" name="SR_01 The system must allow the user to  login and  authorise credentials" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="24" name="SR_02 When the user forget password the system must generate a new password" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="25" name="SR_03 The system must send sms's to monthly ticket purchasers train timetable" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="26" name="SR_04 The database must store train details such as departing and arrival times, routes and locations to produce timetable." note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="27" name="SR_05 The database must store all system users information and allow only the administrator to delete when user is leaving the company." note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="28" name="SR_06 The database must access the interface" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="29" name="SR_07 The system must notify the users when there is a train delay" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="30" name="SR_08 The system must reschedule trains when needed to" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="31" name="SR_09 The system track trains  between the stations" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="32" name="SR_10 The system must print out the train schedule" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="22" name="System Requirement" note="" work="403200" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="23" name="SR_01 The system must allow the user to  login and  authorise credentials" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="24" name="SR_02 When the user forget password the system must generate a new password" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="25" name="SR_03 The system must send sms's to monthly ticket purchasers train timetable" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="26" name="SR_04 The database must store train details such as departing and arrival times, routes and locations to produce timetable." note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="27" name="SR_05 The database must store all system users information and allow only the administrator to delete when user is leaving the company." note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="28" name="SR_06 The database must access the interface" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="29" name="SR_07 The system must notify the users when there is a train delay" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="30" name="SR_08 The system must reschedule trains when needed to" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="31" name="SR_09 The system track trains  between the stations" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="32" name="SR_10 The system must print out the train schedule" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="33" name=" SR_11 System update  train schedule  " note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="34" name=" SR_12 System refresh updated train schedule" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="35" name=" SR_13 The system must allow the user to input train information" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="36" name=" SR_14  The system must have a logout function" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
-        <task id="33" name="User:Administrator" note="" work="115200" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <task id="34" name="FR_01 The user must login using their authorised credentials" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="35" name="FR_02 The user must register new employees" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="36" name="FR_03 The user must be able to modify train information in the database" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="37" name="FR_04 The user must be able to generate reports" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="37" name="User:Administrator" note="" work="115200" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="38" name="FR_01 The user must login using their authorised credentials" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="39" name="FR_02 The user must register new employees" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="40" name="FR_03 The user must be able to modify train information in the database" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="41" name="FR_04 The user must be able to generate reports" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
-        <task id="38" name="User: Employees" note="" work="144000" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-          <task id="39" name="FR_05 The user must login using their authorised credentials" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="40" name="FR_06 The user must be able to sell tickets to the customers" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="41" name="FR_07 The user must be able to register loyal customers(the ones that are purchase monthly tickets)" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="42" name="FR" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-          <task id="43" name="" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="42" name="User: Employees" note="" work="172800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="43" name="FR_05  login functionality using their authorised credentials" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="44" name="FR_06 Update train schedule" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="45" name="FR_07 Register loyal customers(the ones that are purchase monthly tickets)" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="46" name="FR_08 Generate report function" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="47" name="FR_09  Printout timetable function" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+          <task id="48" name="" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
         </task>
       </task>
-      <task id="44" name="Notify the users when the train is delayed" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="45" name="Setup notification framework" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="49" name="Notify the users when the train is delayed" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="50" name="Setup notification framework" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
       </task>
-      <task id="46" name=" GPS Installation" note="" work="57600" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="47" name="Setup GPS" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="48" name="Store cordinates on the Database" note="" work="28800" start="20180927T000000Z" end="20180927T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="51" name=" GPS Installation" note="" work="115200" start="20181121T170000Z" end="20181126T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="52" name="Setup GPS" note="" work="86400" start="20181121T170000Z" end="20181126T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="53" name="Store cordinates on the Database" note="" work="28800" start="20181121T170000Z" end="20181122T170000Z" work-start="20181122T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
       </task>
-      <task id="49" name="Testing" note="" work="14400" start="20180927T000000Z" end="20180927T100000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="50" name="User flow" note="" work="7200" start="20180927T000000Z" end="20180927T100000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="51" name="Functionalities " note="" work="7200" start="20180927T000000Z" end="20180927T100000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      </task>
+    </task>
+    <task id="54" name="Testing" note="" work="144000" start="20180927T000000Z" end="20181001T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="55" name="User flow" note="" work="57600" start="20180927T000000Z" end="20180928T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="56" name="Functionalities " note="" work="86400" start="20180927T000000Z" end="20181001T170000Z" work-start="20180927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
   </tasks>
   <resource-groups/>
